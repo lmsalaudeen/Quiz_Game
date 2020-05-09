@@ -1,0 +1,126 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.quiz-container {
+  width: 80vw;
+  height: fit-content;
+  max-width: 80%;
+  background-color: burlywood;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#question-container {
+  margin: 200px 20px 10px 20px;
+  margin-top: 10%;
+  height: fit-content;
+  padding: 50px 50px 50px 50px;
+  padding-bottom: 50px;
+}
+
+#question {
+  font-weight: bold;
+  text-align: center;
+ 
+  height: fit-content;
+}
+
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  margin-bottom: 50px;
+  height: fit-content;
+  font-size: 50em;
+  color: white;
+  
+  
+}
+
+@media screen and (min-width: 600px) {
+  .btn {
+    font-size: 5rem;
+  }
+  .quiz-container {
+    width: 80vw;
+    
+    max-width: 80%;
+  }
+}
+
+
+.btn {
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: navajowhite;
+  padding: 5px 5px 5px 5px;
+  height: 20%;
+}
+
+.btn:hover {
+  background-color: lightgreen ;
+}
+
+.btn.correct {
+  color: white;
+  background-color: green;
+}
+
+.btn.wrong {
+  color: white;
+  background-color: red;
+}
+
+.start-button, .next-button, #score, .end-button {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 40px 40px 50px 40px; 
+  border: 5px solid teal;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: navajowhite;
+  margin: 10%;
+}
+
+.controls, .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#feedback {
+  color:teal;
+  text-align: center;
+  font-size: 4rem;
+
+}
+a {
+  color: inherit
+}
