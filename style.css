@@ -117,7 +117,7 @@ h2 {
 a {
   color: inherit
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
   body {
     background-color: pink;
   }
@@ -125,7 +125,7 @@ a {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-device-width: 600px) {
   body {
     background-color: green;
   }
@@ -138,7 +138,9 @@ a {
   
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  {
     body {
       background-color: yellow;
     }
@@ -151,7 +153,7 @@ a {
     }
     
     #question, p, #score {
-      font-size: 5rem;
+      
       text-align: center;
       padding-top: 10px;
     }
@@ -162,5 +164,22 @@ a {
       color: yellow;
       font-size: 20px;
     }
-    
+    .start-button, .next-button, #score, .end-button {
+      font-size: 2rem;
     }
+    
+    #question {
+      text-align: center;
+      font-size: 20px;
+    }
+    
+    #answer-buttons {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0;
+      margin-bottom: 0px;
+      color: white;
+      
+      
+    }
+  }
